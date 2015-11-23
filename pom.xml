@@ -201,7 +201,6 @@ CSV files of various types.
         <configuration>
           <excludes>
             <exclude>src/test/java/org/apache/commons/csv/CSVFileParserTest.java</exclude>
-            <exclude>src/test/java/org/apache/commons/csv/CSVFileParserTest.java</exclude>
             <exclude>src/test/java/org/apache/commons/csv/CSVFormatPredefinedTest.java</exclude>
             <exclude>src/test/java/org/apache/commons/csv/CSVFormatTest.java</exclude>
             <exclude>src/test/java/org/apache/commons/csv/CSVParserTest.java</exclude>
