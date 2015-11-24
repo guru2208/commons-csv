@@ -1,10 +1,7 @@
 test:
   override:
-  - mkdir -p $CIRCLE_TEST_REPORTS/junit/
-  - bundle exec junit --format xml --out $CIRCLE_TEST_REPORTS/junit/ \:
         parallel: true
-        files:
-          -src/test/java/org/apache/commons/csv/*.java
   post:
+   - mkdir -p $CIRCLE_TEST_REPORTS/junit/
    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
   
