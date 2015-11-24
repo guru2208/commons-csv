@@ -4,15 +4,7 @@ test:
   - bundle exec junit --format xml --out $CIRCLE_TEST_REPORTS/junit/ \:
         parallel: true
         files:
-          -**/CSVFileParserTest.java
-          -**/CSVFormatPredefinedTest.java
-		  -**/CSVFormatTest.java
-		  -**/CSVParserTest.java
-		  -**/CSVPrinterTest.java
-		  -**/CSVRecordTest.java
-		  -**/FercGovTest.java
-		  -**/LexerTest.java
-		  -**/PerformanceTest.java
+          -src/test/java/org/apache/commons/csv/*.java
   post:
    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
   
