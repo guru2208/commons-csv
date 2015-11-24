@@ -1,7 +1,7 @@
 test:
   override:
-  	- mkdir -p $CIRCLE_TEST_REPORTS/junit/
-    - bundle exec junit --format xml --out $CIRCLE_TEST_REPORTS/junit/ \:
+  - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+  - bundle exec junit --format xml --out $CIRCLE_TEST_REPORTS/junit/ \:
         parallel: true
         files:
           - **/CSVFileParserTest.java
