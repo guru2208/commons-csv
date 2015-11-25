@@ -176,7 +176,7 @@ CSV files of various types.
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
           <excludes>
-            <exclude>**/CSVFileParserTest.java</exclude>
+            <!--<exclude>**/CSVFileParserTest.java</exclude>
 		  <exclude>**/CSVFormatPredefinedTest.java</exclude>
 	  	  <exclude>**/CSVFormatTest.java</exclude>
 		  <exclude>**/CSVParserTest.java</exclude>
@@ -184,7 +184,7 @@ CSV files of various types.
 		  <exclude>**/CSVRecordTest.java</exclude>
 		  <exclude>**/FercGovTest.java</exclude>
 		  <exclude>**/LexerTest.java</exclude>
-		  <exclude>**/PerformanceTest.java</exclude>
+		  <exclude>**/PerformanceTest.java</exclude>-->
             <exclude>**/perf/PerformanceTest.java</exclude>
           </excludes>
         </configuration>
