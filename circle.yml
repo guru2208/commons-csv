@@ -1,6 +1,6 @@
 test:
 override:
-    - bundle exec test:
+    - bundle exec junit:
         parallel: true
         files:
           -src/test/java/*/*Test.java
