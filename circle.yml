@@ -1,6 +1,4 @@
 test:
     override:
-    - bundle exec test:
+        - ./test.sh:
         parallel: true
-        files:
-          -src/test/java/*/*Test.java
